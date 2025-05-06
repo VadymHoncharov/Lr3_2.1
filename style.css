@@ -1,12 +1,19 @@
 body {
-    font-family: Arial, sans-serif;
-    background: #f2f2f2;
-    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+    min-height: 100vh;
+}
+
+/* Центруємо лише контент */
+.content {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0;
+    min-height: calc(100vh - 80px); /* Мінус висота меню, щоб не виходило за екран */
 }
+
 
 .lock-container {
     background: white;
@@ -55,4 +62,36 @@ button:hover {
     margin-top: 15px;
     font-size: 14px;
     color: red;
+}
+.project-nav {
+  background: #f5f5f5;
+  padding: 12px 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  margin-bottom: 30px;
+}
+
+.project-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.project-nav a {
+  display: block;
+  background: #2196f3;
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+  font-size: 14px;
+}
+
+.project-nav a:hover {
+  background: #1976d2;
 }
