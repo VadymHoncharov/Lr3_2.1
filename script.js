@@ -1,5 +1,5 @@
 let pattern = [];
-const correctPattern = ["1", "5", "9"]; // Очікувана послідовність
+const correctPattern = ["1", "5", "9", "8"]; // Очікувана послідовність
 
 document.querySelectorAll(".dot").forEach(dot => {
     dot.addEventListener("click", () => {
